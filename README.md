@@ -40,7 +40,7 @@
 Using LazyDB in JS is really easy, you only need to create a Database object!
 
 ```js
-const db = new Database("youtproject.lazydb.com", 42600);
+const db = new Database("alpha.lazydb.com", your_port);
 ```
 
 Once you initialized the database, you can use any command, here is an example of the login command :
