@@ -37,6 +37,12 @@
 
 ## Getting Started
 
+First, include the lazydb.js script
+
+```html
+<script src="https://lazybrowser.lazydb.com/lazydb.js"></script>
+```
+
 Using LazyDB in JS is really easy, you only need to create a Database object!
 
 ```js
