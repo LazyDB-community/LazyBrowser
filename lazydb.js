@@ -2,7 +2,7 @@
 // values of w = true (disk) false (event only)
 
 class Database {
-    constructor(addr, port, onconnect = (e) => console.log('LazyDB is ready!'), onclose = (e) => console.log('LazyDB server lost!'), secure = false) {
+    constructor(addr, port, onconnect = (e) => console.log('LazyDB is ready!'), onclose = (e) => console.log('LazyDB server lost!'), secure = true) {
         this.addr = addr
         this.port = port
         this.id = 0
