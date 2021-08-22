@@ -33,7 +33,7 @@
 ## Requirements
 
 * A working LazyDB server, that you can get on https://lazydb.com    
-* The JS connector, that you can find here, or using a cdn : https://cdn.jsdelivr.net/gh/LazyDB-community/LazyBrowser@version/lazydb.js   
+* The JS connector, that you can find here, or using a cdn : https://lazybrowser.lazydb.com/lazydb.js   
 
 ## Getting Started
 
