@@ -218,11 +218,12 @@ class Database {
         }
     }
 
-    get(keyPath) {
+    get(keyPath, depth = 0) {
         keyPath = keyPath.split('/')
 
         return this.send('get', {
-            keyPath
+            keyPath,
+            depth
         })
     }
 
