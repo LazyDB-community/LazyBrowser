@@ -99,11 +99,10 @@ class Database {
         })
     }
 
-    edit_password(code, password, email = '') {
+    edit_password(password, user_id = '') {
         return this.send('edit_password', {
-            code,
             password,
-            email
+            user_id
         })
     }
 
