@@ -257,4 +257,24 @@ class Database {
             filter
         });
     };
+    
+    join(gid) {
+        return this.send("join", {
+            gid
+        });
+    };
+    
+    invite(gid, uid, role) {
+        return this.send("invite", {
+            gid,
+            uid,
+            role
+        });
+    };
+    
+    leave(gid) {
+        return this.send("leave", {
+            gid
+        });
+    };
 }
