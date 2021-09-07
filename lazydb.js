@@ -164,18 +164,28 @@ class Database {
         }
     };
 
-    ping(command, keyPath) {
-        return {
-            then: async fn => {
-                keyPath = keyPath.split("/");
+    // coming soon, send a command to a server, random if uid is empty
+    ping(keyPath, data = {}, uid = '') {
+        keyPath = keyPath.split("/");
 
-                return await this.send("on", {
-                    keyPath,
-                    command
-                }, fn);
-            }
-        }
+        return this.send("ping", {
+            keyPath,
+            data,
+            uid
+        });
     };
+    
+    // coming soon, send a response to a ping
+    pong(keyPath, data = {}, uid = '') {
+        keyPath = keyPath.split("/");
+
+        return this.send("ping", {
+            keyPath,
+            data,
+            uid
+        });
+    };
+
 
     stop(event, command, keyPath) {
         keyPath = keyPath.split("/");
