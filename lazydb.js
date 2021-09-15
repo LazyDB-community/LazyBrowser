@@ -287,4 +287,13 @@ class Database {
             gid
         });
     };
+
+    run(keyPath, args = {}) {
+        keyPath = keyPath.split("/");
+
+        return this.send("run", {
+            keyPath,
+            args
+        });
+    };
 }
