@@ -296,4 +296,10 @@ class Database {
             args
         });
     };
+    
+    dns_resolve(domain_name){
+        return this.send("dns_resolve", {
+            domain_name
+        });
+    }
 }
